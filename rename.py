@@ -1,8 +1,9 @@
 import os
 
-path = ""
+path = "F:/traindata/pabonsir/450rpm/Keppler"
 
 folder = os.listdir(path)
+# print(folder)
 
 for folders in folder:
-    os.rename(os.path.join(path,folder), os.path.join(path,folder.replace('orginalName', 'changename')))
+    os.rename(os.path.join(path, folders), os.path.join(path, folders.replace("antares", "keppler")))
